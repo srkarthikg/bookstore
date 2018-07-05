@@ -40,7 +40,7 @@
         alt="Sign in with Google+" />
   </div>
             </div>
-			<a href ="register.php">Register</a> 	<a href ="booksfinal.php"style="float: right;">Show Books</a> 	
+			<a href ="https://bookstorekarthik.herokuapp.com/register.php">Register</a> 	<a href ="https://bookstorekarthik.herokuapp.com/booksfinal.php"style="float: right;">Show Books</a> 	
         </form>
 		
     </div>

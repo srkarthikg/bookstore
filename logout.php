@@ -2,5 +2,5 @@
 session_start();
 session_unset();
 session_destroy();
-header('location:http://localhost/bookstore_final/');
+header('location:https://bookstorekarthik.herokuapp.com/bookstore_final/');
 ?>

@@ -31,9 +31,9 @@ include_once('db.php');
 {?>
 	   <h2 class="form-signin-heading">Book Detials</h2><hr />
 	   <div style="float: right;">
-			<a href="http://localhost/bookstore_final/logout.php" class="btn btn-danger">Logout</a>
+			<a href="https://bookstorekarthik.herokuapp.com/logout.php" class="btn btn-danger">Logout</a>
 		</div>
-			<a href ="http://localhost/bookstore_final/books.php" class="btn btn-info">ADD BOOKS</a>
+			<a href ="https://bookstorekarthik.herokuapp.com//books.php" class="btn btn-info">ADD BOOKS</a>
 		
 		<div id="content">
 			 <form class="form-signin" method="post" id="Bookedit">
@@ -102,7 +102,7 @@ if (isset($_SESSION['user_id']) && $_SESSION['user_id']  != "")
 {?>
 			 <div><h3>All Books</h3>
 			 <div style="float: right;">
-			 <a href="http://localhost/bookstore_final" class="btn btn-danger">Sign In</a>
+			 <a href="https://bookstorekarthik.herokuapp.com/" class="btn btn-danger">Sign In</a>
 			 <p></p>
 			 </div>
 <?php } ?>

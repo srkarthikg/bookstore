@@ -99,7 +99,7 @@ function booksubmitForm()
         $.ajax({
 
             type : 'POST',
-            url  : 'addbooks.php',
+            url  : 'https://bookstorekarthik.herokuapp.com/addbooks.php',
             data : data,
             beforeSend: function()
             {
@@ -125,7 +125,7 @@ function booksubmitForm()
 
                     $("#btn-submit").html('submitting');
                     setTimeout(5000);
-					window.location.href = "http://localhost/bookstore_final/booksfinal.php";
+					window.location.href = "https://bookstorekarthik.herokuapp.com/booksfinal.php";
 
                 }
                 else{
@@ -210,7 +210,7 @@ function bookeditsubmitForm()
 
                     $("#btn-submit").html('updated');
                     setTimeout(5000);
-					window.location.href = "http://localhost/bookstore_final/booksfinal.php";
+					window.location.href = "https://bookstorekarthik.herokuapp.com//booksfinal.php";
 
                 }
                 else{
@@ -264,7 +264,7 @@ function signin()
 
                     $("#btn-submit").html('logging in');
                     setTimeout(5000);
-					window.location.href = "http://localhost/bookstore_final/booksfinal.php";
+					window.location.href = "https://bookstorekarthik.herokuapp.com/booksfinal.php";
 
                 }
                 else{
@@ -316,7 +316,7 @@ function signin()
                 {
 
                     $("#btn-submit").html('Signing Up');
-					window.location.href = "http://localhost/bookstore_final";
+					window.location.href = "https://bookstorekarthik.herokuapp.com/";
 
                 }
                 else{
@@ -352,7 +352,7 @@ function signin()
 		"processing": true,
         "serverSide": true,
         "ajax":{
-			url:"bookshow.php",
+			url:"https://bookstorekarthik.herokuapp.com/bookshow.php",
 			type:"POST"
 		}
     });
@@ -371,7 +371,7 @@ function signin()
 		"processing": true,
         "serverSide": true,
         "ajax":{
-			url:"allbooks.php",
+			url:"https://bookstorekarthik.herokuapp.com/allbooks.php",
 			type:"POST"
 		}
     });
@@ -395,7 +395,7 @@ function updateuser(val){
 	console.log(val);
 		$.ajax({
 			type:"post",
-			url:"bookedit.php",
+			url:"https://bookstorekarthik.herokuapp.com/bookedit.php",
 			data:{ID:val},
 			dataType:"JSON",
 			success: function(data) {
@@ -425,7 +425,7 @@ function deleteuser(val){
 	console.log(val);
 		$.ajax({
 			type:"post",
-			url:"bookdelete.php",
+			url:"https://bookstorekarthik.herokuapp.com/bookdelete.php",
 			data:{ID:val},
 			dataType:"JSON",
 			success: function(data) {

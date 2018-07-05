@@ -46,7 +46,7 @@
                     <span class="glyphicon glyphicon-log-in"></span> &nbsp; Create Account
                 </button>
             </div>
-			<a href="http://localhost/bookstore_final/">Sign In</a>    <a href ="http://localhost/bookstore_final/booksfinal.php"style="float: right;">Show Books</a> 	
+			<a href="https://bookstorekarthik.herokuapp.com/">Sign In</a>    <a href ="https://bookstorekarthik.herokuapp.com/booksfinal.php"style="float: right;">Show Books</a> 	
         </form>
 
     </div>

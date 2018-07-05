@@ -23,8 +23,8 @@ include_once('db.php');
 			<?php
 	if (isset($_SESSION['user_id']) && $_SESSION['user_id']  != "")
 {?>
-			<a href="http://localhost/bookstore_final/booksfinal.php" class="btn btn-default">Show Books</a>
-			<a href="http://localhost/bookstore_final/logout.php" class="btn btn-danger">Logout</a>
+			<a href="https://bookstorekarthik.herokuapp.com/booksfinal.php" class="btn btn-default">Show Books</a>
+			<a href="https://bookstorekarthik.herokuapp.com/logout.php" class="btn btn-danger">Logout</a>
 <?php } ?>
 		</div>
 

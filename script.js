@@ -338,7 +338,7 @@ function signin()
 	
 	
 	
-	var table = $('#example').DataTable({
+	var table = $('#example').dataTable({
 		"columns":[
 			{"data":"id"},
 			{"data":"book_title"},
@@ -348,9 +348,8 @@ function signin()
 			{"data":"description"},
 			{"data":"button" }
 		],
-		"recordsFiltered": 2,
 		"processing": true,
-        "serverSide": true,
+        "bserverSide": true,
         "ajax":{
 			url:"https://bookstorekarthik.herokuapp.com/bookshow.php",
 			type:"POST"
@@ -359,7 +358,7 @@ function signin()
 	
 	
 	
-	var table1 = $('#example1').DataTable({
+	var table1 = $('#example1').dataTable({
 		"columns":[
 			{"data":"id"},
 			{"data":"book_title"},
@@ -369,7 +368,7 @@ function signin()
 			{"data":"description"}
 		],
 		"processing": true,
-        "serverSide": true,
+        "bserverSide": true,
         "ajax":{
 			url:"https://bookstorekarthik.herokuapp.com/allbooks.php",
 			type:"POST"
@@ -442,21 +441,5 @@ function deleteuser(val){
 				console.log(err);
             }
 		});
-}
-
-function filterGlobal () {
-    $('#example').DataTable().search(
-        $('#global_filter').val(),
-        $('#global_regex').prop('checked'),
-        $('#global_smart').prop('checked')
-    ).draw();
-}
- 
-function filterColumn ( i ) {
-    $('#example').DataTable().column( i ).search(
-        $('#col'+i+'_filter').val(),
-        $('#col'+i+'_regex').prop('checked'),
-        $('#col'+i+'_smart').prop('checked')
-    ).draw();
 }
  
